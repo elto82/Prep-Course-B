@@ -49,12 +49,17 @@ function sumaArray(array) {
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
-  let sumaElementos = 0;
+/*   let sumaElementos = 0;
   for (let i = 0; i < array.length; i++) {
     sumaElementos = sumaElementos + array[i];
   }
-  return sumaElementos
-}
+  return sumaElementos */
+  return array.reduce(function(suma, valor){
+    return suma + valor
+  })
+    
+  }
+
 
 function numeroDigitos(num) {
   // Devuelve el número de dígitos de un número dado
