@@ -33,11 +33,16 @@ function elevaAlCuadrado(array) {
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
-  let arrayAlCuadrado = [];
+/*   let arrayAlCuadrado = [];
   for (let i = 0; i < array.length; i++) {
     arrayAlCuadrado.push(array[i] ** 2);
   }
-  return arrayAlCuadrado;
+  return arrayAlCuadrado; */
+
+  return array.map(function(element){
+    return element ** 2
+  })
+  
 }
 
 function sumaArray(array) {
